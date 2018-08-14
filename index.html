@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Basic Javascript</title>	
+		
+		<script>
+		// Created a function sayHello with input
+		function  sayHello(who) { 
+					document.write(variablePlus + "Hello function & " + who);
+					}
+		</script>
+		
+	</head>
+	<body>
+		<!-- JavaScript code -->
+		<script> 
+			//This is a comment - Comments are not executed
+			var readComments = "Basic JavaScript Lesson, Please read comments";
+			document.write(readComments);
+			
+			document.write("<br>"); // Add a new line
+			document.write("<br>"); // Add a new line
+			
+			var variableFirst = 5; // this is a number - any number.
+			var variableSecond = "Hello, World!"; // this is a string - any text inside of double quotes.
+			var variableThird = true; // this is a boolean - true or false.
+			var variablePlus = " + ";
+			var sentence = variableFirst + variablePlus + variableSecond + variablePlus + variableThird; 
+			document.write(sentence + " => This is a concatenation of variables"); 
+			// write the value of sentence = concatenation of variables
+			
+			document.write("<br>"); // Add a new line
+			
+			//to add numbers you can create 2 or more variables
+			var num1 = 533; // This is first number
+			var num2 = 358; // This is second number
+			var total = num1 + num2; // Instead of + you can use: -, *, / %, 
+
+			// You have to declare variable only once and use how many time you want - ex: variablePlus
+			document.write(variablePlus + total + " => This is the total between num1 + num2"); 
+			
+			document.write("<br>"); // Add a new line
+			
+			var total = num1++; // Use num1++ to increment value with 1, or num1-- to decrement with 1
+			document.write(variablePlus + num1 + " => This is value of num1 incremented by 1"); // use ++num1 or --num1 to do the increment/decrement before evaluation
+			
+			// Using console log 
+			console.log(num1 + " => This is value of num1 variable after incremenet"); 
+			// Will show in console log value of num1 + text
+			
+			document.write("<br>"); // Add a new line
+			
+			<!-- Strings -->
+				// Strings are stored as objects
+				var alpha = "ABCDEFG";
+				var length = alpha.length; // Created a new variable with a value of variableName.length;
+				document.write(variablePlus + length + " => This is the length of alpha string"); // write the length of alpha variable
+			
+			document.write("<br>"); // Add a new line
+			
+				var results = alpha.substring(3,5); // Used a substring to extract a part of variable value
+				// Will stop before 5th letter
+				document.write(variablePlus + results + " => This is a substring of 3,5"); // Write the value of substring
+				// A string starts with position 0, in our case is A
+				// A property is just a piece of information, a value, it tells you somenthing about the object
+				// A method can take input, do computation, and output the answer
+			
+			document.write("<br>"); // Add a new line
+			
+			<!-- Arrays -->
+			//Arrays holds many values in a single variable
+				var a = new Array("fisrtArrayString", "secondArraysString", 53, true); // Declare array values
+				document.write(variablePlus + a[1] + " => This is a1 value of the Array"); // You can change a[1] with any values between 0-3 in this case
+				// short hand to write a new array
+				// var a = ["fisrtArrayString", "secondArrayString", 53, true];
+				
+			document.write("<br>"); // Add a new line
+			
+			<!-- Functions -->	
+				// If you have code that you have to re-use, put it in a function and call that function as many times you want
+				//Created a function sayHello in <head>
+				sayHello("Jym" + " => This is function sayHello with Jym as input"); 
+				// Called the function sayHello with Jym as input
+				
+				document.write("<br>"); // Add a new line
+				
+				sayHello("Jimmy" + " => This is function sayHello with Jimmy as input"); 
+				// Called the function sayHello with Jym as input
+				
+				document.write("<br>"); // Add a new line
+				
+				// Flow control statements
+				// If statement wiil execute code only if a particular condition is true
+				var b = 7; 
+					if (b > 10) { // we can use =, <, > ,<=, >=, ==, !=
+						alert(b); // if statement is true will give you a dialog box with value of b
+						}		  // nothing will happen because is false, change 7 to 12 to become true
+					else {
+						sayHello("The condition was false" + " => b < 10");
+						}
+				document.write("<br>"); // Add a new line
+				
+			<!-- Loops -->	
+				// A for loop will execute a block of code multiple times
+				for (i=0;i<5;i++) { 
+				// First give a value to i, then create a condition, then something to do after each itireation - increment i
+					document.write("This is iteration " + i + "<br>"); // string + concatenate the current value of i + new line
+				}
+				// This will create a variable called i and will initialize to 0, then will say... is 0 less than 5, yes it is, so will write the iteration.
+				// Then i will become 1 and will ask again if 1 is less than 5...and will loop and do same thing again until 4 < 5
+				// at 5 < 5, loop will stop 
+			
+		</script>
+	</body>
+</html>
